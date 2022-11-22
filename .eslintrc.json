@@ -5,9 +5,10 @@
         "es2021": true
     },
     "extends": [
-        "standard-with-typescript",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+        "prettier"
     ],
     "overrides": [
         {
@@ -19,6 +20,8 @@
         "project": ["./tsconfig.json"]
     },
     "rules": {
-        "no-console": "error"
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-unused-vars": ["off"]
     }
 }
